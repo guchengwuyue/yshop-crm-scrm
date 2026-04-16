@@ -90,12 +90,12 @@
     <el-row>
       <el-col :span="12">
         <el-form-item label="开票金额" prop="money">
-          <el-input type="number" v-model="formData.money" placeholder="请输入发票税前金额"  />
+          <el-input-number v-model="formData.money" :min="0"  placeholder="请输入发票税前金额" />
         </el-form-item>
       </el-col>
       <el-col :span="12">
         <el-form-item label="开票税率" prop="taxRate">
-          <el-input type="number" v-model="formData.taxRate" placeholder="请输入税率" />
+          <el-input-number v-model="formData.taxRate" :min="0"  placeholder="请输入税率" />
         </el-form-item>
       </el-col>
     </el-row>
